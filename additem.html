@@ -24,7 +24,14 @@
                 <fieldset>
                     <legend>Medication Reminder</legend>
                     <ul>
-                        <li><input type="checkbox" value="Flea Medication" id="flea" /><label for="flea">Flea Medication</label></li>
+                        <li><input type="checkbox" value="Flea Medication" id="flea" /><label for="flea">Flea Medication</label>
+                        <select id-"flea">
+                            <option value="Topical">Topical</option>
+                            <option value="Pill">Pill</option>
+                            <option value="Collar">Collar</option>
+                            <option value="Spray On">Spray On</option>
+                        </select>
+                        </li>
                         <li><input type="checkbox" value="Heartworm Medication" id="heartworm" /><label for="heartworm">Heartworm Medication</label></li>
                         <li><input type="checkbox" value="Other Meds" id="other" /><label for="other">Other Meds</label><input type="text" id="other" /></li>
                     </ul>
@@ -32,7 +39,7 @@
                 <fieldset>
                     <legend>When To Be Reminded</legend>
                     <ul>
-                        <li><label for="date">Date:</label><input type="date" value="date" id="date" /></li>
+                        <li><label for="date">Date:</label><input type="date" id="date" /></li>
                     </ul>
                 </fieldset>
                 <fieldset>
@@ -41,9 +48,10 @@
                 </fieldset>
                 <fieldset>
                     <legend>Note For Reminder</legend>
-                    <label for="note">Type a note here:</label><input type="textarea" id="note" />
+                    <label for="note">Type a note here:</label><textarea id="note"></textarea>
                 </fieldset>
-                
+                <input type="submit" value="Create Reminder!" />
+                <input type="hidden" value="Reminder Reference #" />
             </form>
             
             
